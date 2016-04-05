@@ -1,0 +1,4 @@
+{
+  "materials": ["../fabricator-starter/src/materials/**/*"],
+  "images"   : ["../fabricator-starter/src/assets/images/**/*"]
+}

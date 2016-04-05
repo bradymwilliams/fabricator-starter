@@ -14,9 +14,9 @@
   },
   "scripts": {
     "prestart": "npm install",
-    "start": "cd node_modules && cd fabricator-builder && npm start && cd .. && cd ..",
+    "start": "cd .. && cd fabricator && npm start -- --config=\"../fabricator-starter/fabricatorConfig.json\" --buildConfig=\"../fabricator-starter/buildConfig\" && cd .. && cd fabricator-starter",
     "prebuild": "npm install",
-    "build": "cd node_modules && cd fabricator-builder && npm run build && cd .. && cd .."
+    "build": "cd .. && cd fabricator && npm run build -- --config=\"../fabricator-starter/fabricatorConfig.json\" --buildConfig=\"../fabricator-starter/buildConfig\" && cd .. && cd fabricator-starter"
   },
   "devDependencies": {
     "fabricator-builder": "0.0.3"
