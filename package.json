@@ -14,11 +14,11 @@
   },
   "scripts": {
     "prestart": "npm install",
-    "start": "cd .. && cd fabricator && npm start -- --config=\"../fabricator-starter/fabricatorConfig.json\" --buildConfig=\"../fabricator-starter/buildConfig\" && cd .. && cd fabricator-starter",
+    "start": "cd node_modules && cd fabricator-builder && npm start -- --config=\"../../fabricatorConfig.json\" --buildConfig=\"../../buildConfig\" && cd .. && cd ..",
     "prebuild": "npm install",
-    "build": "cd .. && cd fabricator && npm run build -- --config=\"../fabricator-starter/fabricatorConfig.json\" --buildConfig=\"../fabricator-starter/buildConfig\" && cd .. && cd fabricator-starter"
+    "build": "cd node_modules && cd fabricator-builder && npm run build -- --config=\"../../fabricatorConfig.json\" --buildConfig=\"../../buildConfig\" && cd .. && cd .."
   },
   "devDependencies": {
-    "fabricator-builder": "0.0.3"
+    "fabricator-builder": "dietergeerts/fabricator-builder.git#road-to-atomic"
   }
 }
