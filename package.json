@@ -14,11 +14,16 @@
   },
   "scripts": {
     "prestart": "npm install",
-    "start": "cd node_modules && cd fabricator-builder && npm start -- --config=\"../../fabricatorConfig.json\" --buildConfig=\"../../buildConfig\" && cd .. && cd ..",
+    "start": "cd node_modules && cd fabricator-builder && npm start -- --config=\"../../fabricatorConfig.json\" --toolkitConfig=\"../../toolkitConfig.json\" && cd .. && cd ..",
     "prebuild": "npm install",
-    "build": "cd node_modules && cd fabricator-builder && npm run build -- --config=\"../../fabricatorConfig.json\" --buildConfig=\"../../buildConfig\" && cd .. && cd .."
+    "build": "cd node_modules && cd fabricator-builder && npm run build -- --config=\"../../fabricatorConfig.json\" --toolkitConfig=\"../../toolkitConfig\" && cd .. && cd .."
   },
   "devDependencies": {
-    "fabricator-builder": "dietergeerts/fabricator-builder.git#road-to-atomic"
+    "angular2": "2.0.0-beta.17",
+    "es6-shim": "0.35.1",
+    "fabricator-builder": "dietergeerts/fabricator-builder.git#extract-project-and-wiki",
+    "reflect-metadata": "0.1.2",
+    "rxjs": "5.0.0-beta.6",
+    "zone.js": "0.6.12"
   }
 }
