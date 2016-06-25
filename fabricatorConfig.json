@@ -1,2 +1,18 @@
 {
+  "dest"     : "./dest",
+  "package"  : "./package.json",
+  "docs"     : "./src/docs/**/*.md",
+  "materials": "./src/materials/**/*",
+  "templates": "./src/templates/**/*",
+  "data"     : "./src/data/**/*.{json,yml}",
+  "samples"  : "./src/samples/**/*",
+  "scripts"  : {
+    "toolkit": "./src/assets/prepared/toolkit.js"
+  },
+  "fonts"    : "./src/assets/toolkit/fonts/**/*",
+  "images"   : "./src/assets/toolkit/images/**/*",
+  "styles"   : {
+    "toolkit": "./src/assets/styles/*.scss"
+  },
+  "toolkitConfig": "./toolkitConfig.json"
 }

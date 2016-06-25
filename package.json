@@ -1,8 +1,23 @@
 {
   "name": "fabricator-starter",
   "version": "0.0.1",
-  "description": "A starter toolkit for your fabricator based toolkit.",
+  "description": "An example toolkit to start off with Fabricator Builder",
   "homepage": "https://github.com/dietergeerts/fabricator-starter",
+  "scripts": {
+    "prestart": "npm install",
+    "start": "gulp --dev",
+    "prebuild": "npm install",
+    "build": "gulp",
+    "test": "npm run build"
+  },
+  "keywords": [
+    "toolkit",
+    "styleguide",
+    "framework",
+    "scaffold",
+    "patterns",
+    "library"
+  ],
   "author": "Dieter Geerts <dieter@dworks.be>",
   "license": "MIT",
   "repository": {
@@ -10,20 +25,16 @@
     "url": "https://github.com/dietergeerts/fabricator-starter.git"
   },
   "engines": {
-    "node": ">=0.12.0"
+    "node": ">=0.12.0",
+    "npm": ">=2.0.0"
   },
-  "scripts": {
-    "prestart": "npm install",
-    "start": "cd node_modules && cd fabricator-builder && npm start -- --config=\"../../fabricatorConfig.json\" --toolkitConfig=\"../../toolkitConfig.json\" && cd .. && cd ..",
-    "prebuild": "npm install",
-    "build": "cd node_modules && cd fabricator-builder && npm run build -- --config=\"../../fabricatorConfig.json\" --toolkitConfig=\"../../toolkitConfig\" && cd .. && cd .."
+  "dependencies": {
   },
   "devDependencies": {
-    "angular2": "2.0.0-beta.17",
-    "es6-shim": "0.35.1",
-    "fabricator-builder": "dietergeerts/fabricator-builder.git#extract-project-and-wiki",
-    "reflect-metadata": "0.1.2",
-    "rxjs": "5.0.0-beta.6",
-    "zone.js": "0.6.12"
+    "fabricator-builder": "dietergeerts/fabricator.git#extract-project-and-wiki",
+    "gulp": "3.9.1",
+    "gulp-concat": "2.6.0",
+    "gulp-ng-annotate": "2.0.0",
+    "gulp-util": "3.0.7"
   }
 }
