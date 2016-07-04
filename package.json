@@ -31,7 +31,7 @@
   "dependencies": {
   },
   "devDependencies": {
-    "fabricator-builder": "dietergeerts/fabricator.git#3.0.0",
+    "fabricator-builder": "3.2.4",
     "gulp": "3.9.1",
     "gulp-concat": "2.6.0",
     "gulp-ng-annotate": "2.0.0",

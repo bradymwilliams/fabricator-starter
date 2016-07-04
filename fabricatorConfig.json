@@ -6,11 +6,12 @@
   "templates": "./src/templates/**/*",
   "data"     : "./src/data/**/*.{json,yml}",
   "samples"  : "./src/samples/**/*",
+  "analyze"  : "./src/assets/scripts/**/*",
   "scripts"  : {
     "toolkit": "./src/assets/prepared/toolkit.js"
   },
-  "fonts"    : "./src/assets/toolkit/fonts/**/*",
-  "images"   : "./src/assets/toolkit/images/**/*",
+  "fonts"    : "./src/assets/fonts/**/*",
+  "images"   : "./src/assets/images/**/*",
   "styles"   : {
     "toolkit": "./src/assets/styles/*.scss"
   },
