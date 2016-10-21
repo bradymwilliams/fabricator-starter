@@ -1,5 +1,5 @@
 {
-  "dest"     : "./dest",
+  "dest"     : "./build",
   "package"  : "./package.json",
   "docs"     : "./src/docs/**/*.md",
   "materials": "./src/materials/**/*",
@@ -11,6 +11,7 @@
     "toolkit": "./src/assets/prepared/toolkit.js"
   },
   "fonts"    : "./src/assets/fonts/**/*",
+  "icons"    : "./src/assets/icons/**/*",
   "images"   : "./src/assets/images/**/*",
   "styles"   : {
     "toolkit": "./src/assets/styles/*.scss"

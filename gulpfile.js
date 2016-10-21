@@ -1,8 +1,5 @@
 'use strict';
 
-// This file is just for testing, the real toolkit will always use gulp, and then
-// start our tasks with it by calling the fabricator we have exported with index.js.
-
 var concat     = require('gulp-concat');
 var fabricator = require('fabricator-builder');
 var gulp       = require('gulp');

@@ -3,12 +3,15 @@
   "version": "1.0.0",
   "description": "An example toolkit to start off with Fabricator Builder",
   "homepage": "https://github.com/dietergeerts/fabricator-starter",
+  "main": "gulpfile.js",
   "scripts": {
     "prestart": "npm install",
     "start": "gulp --dev",
     "prebuild": "npm install",
     "build": "gulp",
-    "test": "npm run build"
+    "test": "npm run build",
+    "version": "npm test",
+    "postversion": "git push && git push --tags"
   },
   "keywords": [
     "toolkit",
@@ -31,7 +34,7 @@
   "dependencies": {
   },
   "devDependencies": {
-    "fabricator-builder": "3.2.4",
+    "fabricator-builder": "3.4.0",
     "gulp": "3.9.1",
     "gulp-concat": "2.6.0",
     "gulp-ng-annotate": "2.0.0",
