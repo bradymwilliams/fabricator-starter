@@ -5,9 +5,9 @@ toolkit.
 
 ## Using this Toolkit
 
-You only need to consider this section if you just want to use this toolkit into your project.
+**You only need to consider this section if you just want to use this toolkit into your project.**
 
-- This toolkit has all it's files generated into the folder: `dest/assets/toolkit/`.
+- This toolkit has all it's files generated into the folder: `build/assets/toolkit/`.
 - When making this a npm module, your project can easily include the toolkit files through gulp.
 
 ## Tools
